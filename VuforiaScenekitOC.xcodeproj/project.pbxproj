@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC8955C1F3AF89300A1CF5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8955B1F3AF89300A1CF5B /* main.m */; };
+		EDC8955F1F3AF89300A1CF5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8955E1F3AF89300A1CF5B /* AppDelegate.m */; };
+		EDC895621F3AF89300A1CF5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC895611F3AF89300A1CF5B /* ViewController.m */; };
+		EDC895651F3AF89300A1CF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC895631F3AF89300A1CF5B /* Main.storyboard */; };
+		EDC895671F3AF89400A1CF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC895661F3AF89400A1CF5B /* Assets.xcassets */; };
+		EDC8956A1F3AF89400A1CF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC895681F3AF89400A1CF5B /* LaunchScreen.storyboard */; };
+		EDC896D01F3B045300A1CF5B /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896C11F3B045300A1CF5B /* libVuforia.a */; };
+		EDC896D11F3B045300A1CF5B /* license_3rdpartynotice.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDC896C31F3B045300A1CF5B /* license_3rdpartynotice.txt */; };
+		EDC896D21F3B045300A1CF5B /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDC896C41F3B045300A1CF5B /* readme.txt */; };
+		EDC896D31F3B045300A1CF5B /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDC896C61F3B045300A1CF5B /* readme.txt */; };
+		EDC896D41F3B045300A1CF5B /* VuforiaEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDC896C91F3B045300A1CF5B /* VuforiaEAGLView.mm */; };
+		EDC896D51F3B045300A1CF5B /* VuforiaManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDC896CB1F3B045300A1CF5B /* VuforiaManager.mm */; };
+		EDC896D61F3B045300A1CF5B /* VuforiaObjects.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDC896CD1F3B045300A1CF5B /* VuforiaObjects.mm */; };
+		EDC896D71F3B045300A1CF5B /* VuforiaShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC896CF1F3B045300A1CF5B /* VuforiaShaderUtils.m */; };
+		EDC896DC1F3B062200A1CF5B /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896DB1F3B062200A1CF5B /* SceneKit.framework */; };
+		EDC896DE1F3B062800A1CF5B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896DD1F3B062800A1CF5B /* SpriteKit.framework */; };
+		EDC896E01F3B063E00A1CF5B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896DF1F3B063E00A1CF5B /* MediaPlayer.framework */; };
+		EDC896E21F3B064500A1CF5B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896E11F3B064500A1CF5B /* AudioToolbox.framework */; };
+		EDC896E41F3B065A00A1CF5B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896E31F3B065A00A1CF5B /* OpenGLES.framework */; };
+		EDC896E61F3B066300A1CF5B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896E51F3B066300A1CF5B /* CoreMedia.framework */; };
+		EDC896E81F3B066E00A1CF5B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896E71F3B066E00A1CF5B /* SystemConfiguration.framework */; };
+		EDC896EA1F3B067600A1CF5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896E91F3B067600A1CF5B /* AVFoundation.framework */; };
+		EDC896EC1F3B067B00A1CF5B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC896EB1F3B067B00A1CF5B /* CoreMotion.framework */; };
+		EDC897151F3BFA1700A1CF5B /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = EDC897111F3BFA1700A1CF5B /* StonesAndChips.dat */; };
+		EDC897161F3BFA1700A1CF5B /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDC897121F3BFA1700A1CF5B /* StonesAndChips.xml */; };
+		EDC897841F3C3EDD00A1CF5B /* Lowpoly_tree_sample.scn in Resources */ = {isa = PBXBuildFile; fileRef = EDC897831F3C3A5900A1CF5B /* Lowpoly_tree_sample.scn */; };
+		EDC8978F1F3C54AE00A1CF5B /* Lowpoly_tree_sample.scn in Resources */ = {isa = PBXBuildFile; fileRef = EDC8978E1F3C54AE00A1CF5B /* Lowpoly_tree_sample.scn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EDC895571F3AF89300A1CF5B /* VuforiaScenekitOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VuforiaScenekitOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC8955B1F3AF89300A1CF5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC8955D1F3AF89300A1CF5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC8955E1F3AF89300A1CF5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC895601F3AF89300A1CF5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC895611F3AF89300A1CF5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC895641F3AF89300A1CF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC895661F3AF89400A1CF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC895691F3AF89400A1CF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC8956B1F3AF89400A1CF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC8966A1F3B045300A1CF5B /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		EDC8966B1F3B045300A1CF5B /* Box3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box3D.h; sourceTree = "<group>"; };
+		EDC8966C1F3B045300A1CF5B /* CameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCalibration.h; sourceTree = "<group>"; };
+		EDC8966D1F3B045300A1CF5B /* CameraDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDevice.h; sourceTree = "<group>"; };
+		EDC8966E1F3B045300A1CF5B /* CameraField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraField.h; sourceTree = "<group>"; };
+		EDC8966F1F3B045300A1CF5B /* CustomViewerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewerParameters.h; sourceTree = "<group>"; };
+		EDC896701F3B045300A1CF5B /* CylinderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylinderTarget.h; sourceTree = "<group>"; };
+		EDC896711F3B045300A1CF5B /* CylinderTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylinderTargetResult.h; sourceTree = "<group>"; };
+		EDC896721F3B045300A1CF5B /* DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSet.h; sourceTree = "<group>"; };
+		EDC896731F3B045300A1CF5B /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		EDC896741F3B045300A1CF5B /* DeviceTrackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTrackable.h; sourceTree = "<group>"; };
+		EDC896751F3B045300A1CF5B /* DeviceTrackableResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTrackableResult.h; sourceTree = "<group>"; };
+		EDC896761F3B045300A1CF5B /* DeviceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTracker.h; sourceTree = "<group>"; };
+		EDC896771F3B045300A1CF5B /* EyeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeID.h; sourceTree = "<group>"; };
+		EDC896781F3B045300A1CF5B /* EyewearCalibrationProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearCalibrationProfileManager.h; sourceTree = "<group>"; };
+		EDC896791F3B045300A1CF5B /* EyewearCalibrationReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearCalibrationReading.h; sourceTree = "<group>"; };
+		EDC8967A1F3B045300A1CF5B /* EyewearDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearDevice.h; sourceTree = "<group>"; };
+		EDC8967B1F3B045300A1CF5B /* EyewearUserCalibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearUserCalibrator.h; sourceTree = "<group>"; };
+		EDC8967C1F3B045300A1CF5B /* Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
+		EDC8967D1F3B045300A1CF5B /* GLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderer.h; sourceTree = "<group>"; };
+		EDC8967E1F3B045300A1CF5B /* HandheldTransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandheldTransformModel.h; sourceTree = "<group>"; };
+		EDC8967F1F3B045300A1CF5B /* HeadTransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTransformModel.h; sourceTree = "<group>"; };
+		EDC896801F3B045300A1CF5B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		EDC896811F3B045300A1CF5B /* ImageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTarget.h; sourceTree = "<group>"; };
+		EDC896821F3B045300A1CF5B /* ImageTargetBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetBuilder.h; sourceTree = "<group>"; };
+		EDC896831F3B045300A1CF5B /* ImageTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetResult.h; sourceTree = "<group>"; };
+		EDC896841F3B045300A1CF5B /* InstanceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceId.h; sourceTree = "<group>"; };
+		EDC896851F3B045300A1CF5B /* Matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrices.h; sourceTree = "<group>"; };
+		EDC896861F3B045300A1CF5B /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		EDC896871F3B045300A1CF5B /* MetalRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
+		EDC896881F3B045300A1CF5B /* MultiTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTarget.h; sourceTree = "<group>"; };
+		EDC896891F3B045300A1CF5B /* MultiTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTargetResult.h; sourceTree = "<group>"; };
+		EDC8968A1F3B045300A1CF5B /* NonCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonCopyable.h; sourceTree = "<group>"; };
+		EDC8968B1F3B045300A1CF5B /* Obb2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obb2D.h; sourceTree = "<group>"; };
+		EDC8968C1F3B045300A1CF5B /* Obb3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obb3D.h; sourceTree = "<group>"; };
+		EDC8968D1F3B045300A1CF5B /* ObjectTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTarget.h; sourceTree = "<group>"; };
+		EDC8968E1F3B045300A1CF5B /* ObjectTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTargetResult.h; sourceTree = "<group>"; };
+		EDC8968F1F3B045300A1CF5B /* ObjectTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTracker.h; sourceTree = "<group>"; };
+		EDC896901F3B045300A1CF5B /* Prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prop.h; sourceTree = "<group>"; };
+		EDC896911F3B045300A1CF5B /* PropResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropResult.h; sourceTree = "<group>"; };
+		EDC896921F3B045300A1CF5B /* Reconstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reconstruction.h; sourceTree = "<group>"; };
+		EDC896931F3B045300A1CF5B /* ReconstructionFromTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReconstructionFromTarget.h; sourceTree = "<group>"; };
+		EDC896941F3B045300A1CF5B /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		EDC896951F3B045300A1CF5B /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		EDC896961F3B045300A1CF5B /* RenderingPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingPrimitives.h; sourceTree = "<group>"; };
+		EDC896971F3B045300A1CF5B /* RotationalDeviceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationalDeviceTracker.h; sourceTree = "<group>"; };
+		EDC896981F3B045300A1CF5B /* SmartTerrainBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainBuilder.h; sourceTree = "<group>"; };
+		EDC896991F3B045300A1CF5B /* SmartTerrainTrackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainTrackable.h; sourceTree = "<group>"; };
+		EDC8969A1F3B045300A1CF5B /* SmartTerrainTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainTracker.h; sourceTree = "<group>"; };
+		EDC8969B1F3B045300A1CF5B /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		EDC8969C1F3B045300A1CF5B /* StateUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateUpdater.h; sourceTree = "<group>"; };
+		EDC8969D1F3B045300A1CF5B /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surface.h; sourceTree = "<group>"; };
+		EDC8969E1F3B045300A1CF5B /* SurfaceResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfaceResult.h; sourceTree = "<group>"; };
+		EDC8969F1F3B045300A1CF5B /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		EDC896A01F3B045300A1CF5B /* TargetFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetFinder.h; sourceTree = "<group>"; };
+		EDC896A11F3B045300A1CF5B /* TargetSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetSearchResult.h; sourceTree = "<group>"; };
+		EDC896A21F3B045300A1CF5B /* TextTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTracker.h; sourceTree = "<group>"; };
+		EDC896A31F3B045300A1CF5B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		EDC896A41F3B045300A1CF5B /* Trackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trackable.h; sourceTree = "<group>"; };
+		EDC896A51F3B045300A1CF5B /* TrackableResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackableResult.h; sourceTree = "<group>"; };
+		EDC896A61F3B045300A1CF5B /* TrackableSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackableSource.h; sourceTree = "<group>"; };
+		EDC896A71F3B045300A1CF5B /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		EDC896A81F3B045300A1CF5B /* TrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerManager.h; sourceTree = "<group>"; };
+		EDC896A91F3B045300A1CF5B /* TransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformModel.h; sourceTree = "<group>"; };
+		EDC896AA1F3B045300A1CF5B /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		EDC896AB1F3B045300A1CF5B /* UIGLViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGLViewProtocol.h; sourceTree = "<group>"; };
+		EDC896AC1F3B045300A1CF5B /* UpdateCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCallback.h; sourceTree = "<group>"; };
+		EDC896AD1F3B045300A1CF5B /* Vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectors.h; sourceTree = "<group>"; };
+		EDC896AE1F3B045300A1CF5B /* VideoBackgroundConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBackgroundConfig.h; sourceTree = "<group>"; };
+		EDC896AF1F3B045300A1CF5B /* VideoBackgroundTextureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBackgroundTextureInfo.h; sourceTree = "<group>"; };
+		EDC896B01F3B045300A1CF5B /* VideoMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMode.h; sourceTree = "<group>"; };
+		EDC896B11F3B045300A1CF5B /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		EDC896B21F3B045300A1CF5B /* ViewerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerParameters.h; sourceTree = "<group>"; };
+		EDC896B31F3B045300A1CF5B /* ViewerParametersList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerParametersList.h; sourceTree = "<group>"; };
+		EDC896B41F3B045300A1CF5B /* ViewList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewList.h; sourceTree = "<group>"; };
+		EDC896B51F3B045300A1CF5B /* VirtualButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualButton.h; sourceTree = "<group>"; };
+		EDC896B61F3B045300A1CF5B /* VirtualButtonResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualButtonResult.h; sourceTree = "<group>"; };
+		EDC896B71F3B045300A1CF5B /* Vuforia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vuforia.h; sourceTree = "<group>"; };
+		EDC896B81F3B045300A1CF5B /* Vuforia_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vuforia_iOS.h; sourceTree = "<group>"; };
+		EDC896B91F3B045300A1CF5B /* VuMarkTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTarget.h; sourceTree = "<group>"; };
+		EDC896BA1F3B045300A1CF5B /* VuMarkTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTargetResult.h; sourceTree = "<group>"; };
+		EDC896BB1F3B045300A1CF5B /* VuMarkTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTemplate.h; sourceTree = "<group>"; };
+		EDC896BC1F3B045300A1CF5B /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		EDC896BD1F3B045300A1CF5B /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
+		EDC896BE1F3B045300A1CF5B /* WordResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordResult.h; sourceTree = "<group>"; };
+		EDC896C11F3B045300A1CF5B /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVuforia.a; sourceTree = "<group>"; };
+		EDC896C31F3B045300A1CF5B /* license_3rdpartynotice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license_3rdpartynotice.txt; sourceTree = "<group>"; };
+		EDC896C41F3B045300A1CF5B /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EDC896C61F3B045300A1CF5B /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EDC896C81F3B045300A1CF5B /* VuforiaEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuforiaEAGLView.h; sourceTree = "<group>"; };
+		EDC896C91F3B045300A1CF5B /* VuforiaEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VuforiaEAGLView.mm; sourceTree = "<group>"; };
+		EDC896CA1F3B045300A1CF5B /* VuforiaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuforiaManager.h; sourceTree = "<group>"; };
+		EDC896CB1F3B045300A1CF5B /* VuforiaManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VuforiaManager.mm; sourceTree = "<group>"; };
+		EDC896CC1F3B045300A1CF5B /* VuforiaObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuforiaObjects.h; sourceTree = "<group>"; };
+		EDC896CD1F3B045300A1CF5B /* VuforiaObjects.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VuforiaObjects.mm; sourceTree = "<group>"; };
+		EDC896CE1F3B045300A1CF5B /* VuforiaShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuforiaShaderUtils.h; sourceTree = "<group>"; };
+		EDC896CF1F3B045300A1CF5B /* VuforiaShaderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VuforiaShaderUtils.m; sourceTree = "<group>"; };
+		EDC896DB1F3B062200A1CF5B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		EDC896DD1F3B062800A1CF5B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EDC896DF1F3B063E00A1CF5B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EDC896E11F3B064500A1CF5B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EDC896E31F3B065A00A1CF5B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EDC896E51F3B066300A1CF5B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EDC896E71F3B066E00A1CF5B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EDC896E91F3B067600A1CF5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EDC896EB1F3B067B00A1CF5B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		EDC897111F3BFA1700A1CF5B /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = StonesAndChips.dat; path = Resource/StonesAndChips.dat; sourceTree = "<group>"; };
+		EDC897121F3BFA1700A1CF5B /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = StonesAndChips.xml; path = Resource/StonesAndChips.xml; sourceTree = "<group>"; };
+		EDC897831F3C3A5900A1CF5B /* Lowpoly_tree_sample.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Lowpoly_tree_sample.scn; path = Resource/Lowpoly_tree_sample.scn; sourceTree = "<group>"; };
+		EDC8978E1F3C54AE00A1CF5B /* Lowpoly_tree_sample.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Lowpoly_tree_sample.scn; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC895541F3AF89300A1CF5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC896EC1F3B067B00A1CF5B /* CoreMotion.framework in Frameworks */,
+				EDC896EA1F3B067600A1CF5B /* AVFoundation.framework in Frameworks */,
+				EDC896E81F3B066E00A1CF5B /* SystemConfiguration.framework in Frameworks */,
+				EDC896E61F3B066300A1CF5B /* CoreMedia.framework in Frameworks */,
+				EDC896E41F3B065A00A1CF5B /* OpenGLES.framework in Frameworks */,
+				EDC896E21F3B064500A1CF5B /* AudioToolbox.framework in Frameworks */,
+				EDC896E01F3B063E00A1CF5B /* MediaPlayer.framework in Frameworks */,
+				EDC896DE1F3B062800A1CF5B /* SpriteKit.framework in Frameworks */,
+				EDC896DC1F3B062200A1CF5B /* SceneKit.framework in Frameworks */,
+				EDC896D01F3B045300A1CF5B /* libVuforia.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC8954E1F3AF89300A1CF5B = {
+			isa = PBXGroup;
+			children = (
+				EDC896651F3B045300A1CF5B /* Vuforia */,
+				EDC895591F3AF89300A1CF5B /* VuforiaScenekitOC */,
+				EDC895581F3AF89300A1CF5B /* Products */,
+				EDC896DA1F3B062200A1CF5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC895581F3AF89300A1CF5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC895571F3AF89300A1CF5B /* VuforiaScenekitOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC895591F3AF89300A1CF5B /* VuforiaScenekitOC */ = {
+			isa = PBXGroup;
+			children = (
+				EDC897191F3BFF1100A1CF5B /* SceneKitAssets */,
+				EDC897181F3BFEF500A1CF5B /* VuforiaAssets */,
+				EDC8955D1F3AF89300A1CF5B /* AppDelegate.h */,
+				EDC8955E1F3AF89300A1CF5B /* AppDelegate.m */,
+				EDC895601F3AF89300A1CF5B /* ViewController.h */,
+				EDC895611F3AF89300A1CF5B /* ViewController.m */,
+				EDC895631F3AF89300A1CF5B /* Main.storyboard */,
+				EDC895661F3AF89400A1CF5B /* Assets.xcassets */,
+				EDC895681F3AF89400A1CF5B /* LaunchScreen.storyboard */,
+				EDC8956B1F3AF89400A1CF5B /* Info.plist */,
+				EDC8955A1F3AF89300A1CF5B /* Supporting Files */,
+			);
+			path = VuforiaScenekitOC;
+			sourceTree = "<group>";
+		};
+		EDC8955A1F3AF89300A1CF5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8955B1F3AF89300A1CF5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDC896651F3B045300A1CF5B /* Vuforia */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896661F3B045300A1CF5B /* vuforia-sdk-ios-6-2-9 */,
+				EDC896C71F3B045300A1CF5B /* VuforiaManager */,
+			);
+			path = Vuforia;
+			sourceTree = "<group>";
+		};
+		EDC896661F3B045300A1CF5B /* vuforia-sdk-ios-6-2-9 */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896671F3B045300A1CF5B /* build */,
+				EDC896C21F3B045300A1CF5B /* licenses */,
+				EDC896C41F3B045300A1CF5B /* readme.txt */,
+				EDC896C51F3B045300A1CF5B /* samples */,
+			);
+			path = "vuforia-sdk-ios-6-2-9";
+			sourceTree = "<group>";
+		};
+		EDC896671F3B045300A1CF5B /* build */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896681F3B045300A1CF5B /* include */,
+				EDC896BF1F3B045300A1CF5B /* lib */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		EDC896681F3B045300A1CF5B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896691F3B045300A1CF5B /* Vuforia */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EDC896691F3B045300A1CF5B /* Vuforia */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8966A1F3B045300A1CF5B /* Area.h */,
+				EDC8966B1F3B045300A1CF5B /* Box3D.h */,
+				EDC8966C1F3B045300A1CF5B /* CameraCalibration.h */,
+				EDC8966D1F3B045300A1CF5B /* CameraDevice.h */,
+				EDC8966E1F3B045300A1CF5B /* CameraField.h */,
+				EDC8966F1F3B045300A1CF5B /* CustomViewerParameters.h */,
+				EDC896701F3B045300A1CF5B /* CylinderTarget.h */,
+				EDC896711F3B045300A1CF5B /* CylinderTargetResult.h */,
+				EDC896721F3B045300A1CF5B /* DataSet.h */,
+				EDC896731F3B045300A1CF5B /* Device.h */,
+				EDC896741F3B045300A1CF5B /* DeviceTrackable.h */,
+				EDC896751F3B045300A1CF5B /* DeviceTrackableResult.h */,
+				EDC896761F3B045300A1CF5B /* DeviceTracker.h */,
+				EDC896771F3B045300A1CF5B /* EyeID.h */,
+				EDC896781F3B045300A1CF5B /* EyewearCalibrationProfileManager.h */,
+				EDC896791F3B045300A1CF5B /* EyewearCalibrationReading.h */,
+				EDC8967A1F3B045300A1CF5B /* EyewearDevice.h */,
+				EDC8967B1F3B045300A1CF5B /* EyewearUserCalibrator.h */,
+				EDC8967C1F3B045300A1CF5B /* Frame.h */,
+				EDC8967D1F3B045300A1CF5B /* GLRenderer.h */,
+				EDC8967E1F3B045300A1CF5B /* HandheldTransformModel.h */,
+				EDC8967F1F3B045300A1CF5B /* HeadTransformModel.h */,
+				EDC896801F3B045300A1CF5B /* Image.h */,
+				EDC896811F3B045300A1CF5B /* ImageTarget.h */,
+				EDC896821F3B045300A1CF5B /* ImageTargetBuilder.h */,
+				EDC896831F3B045300A1CF5B /* ImageTargetResult.h */,
+				EDC896841F3B045300A1CF5B /* InstanceId.h */,
+				EDC896851F3B045300A1CF5B /* Matrices.h */,
+				EDC896861F3B045300A1CF5B /* Mesh.h */,
+				EDC896871F3B045300A1CF5B /* MetalRenderer.h */,
+				EDC896881F3B045300A1CF5B /* MultiTarget.h */,
+				EDC896891F3B045300A1CF5B /* MultiTargetResult.h */,
+				EDC8968A1F3B045300A1CF5B /* NonCopyable.h */,
+				EDC8968B1F3B045300A1CF5B /* Obb2D.h */,
+				EDC8968C1F3B045300A1CF5B /* Obb3D.h */,
+				EDC8968D1F3B045300A1CF5B /* ObjectTarget.h */,
+				EDC8968E1F3B045300A1CF5B /* ObjectTargetResult.h */,
+				EDC8968F1F3B045300A1CF5B /* ObjectTracker.h */,
+				EDC896901F3B045300A1CF5B /* Prop.h */,
+				EDC896911F3B045300A1CF5B /* PropResult.h */,
+				EDC896921F3B045300A1CF5B /* Reconstruction.h */,
+				EDC896931F3B045300A1CF5B /* ReconstructionFromTarget.h */,
+				EDC896941F3B045300A1CF5B /* Rectangle.h */,
+				EDC896951F3B045300A1CF5B /* Renderer.h */,
+				EDC896961F3B045300A1CF5B /* RenderingPrimitives.h */,
+				EDC896971F3B045300A1CF5B /* RotationalDeviceTracker.h */,
+				EDC896981F3B045300A1CF5B /* SmartTerrainBuilder.h */,
+				EDC896991F3B045300A1CF5B /* SmartTerrainTrackable.h */,
+				EDC8969A1F3B045300A1CF5B /* SmartTerrainTracker.h */,
+				EDC8969B1F3B045300A1CF5B /* State.h */,
+				EDC8969C1F3B045300A1CF5B /* StateUpdater.h */,
+				EDC8969D1F3B045300A1CF5B /* Surface.h */,
+				EDC8969E1F3B045300A1CF5B /* SurfaceResult.h */,
+				EDC8969F1F3B045300A1CF5B /* System.h */,
+				EDC896A01F3B045300A1CF5B /* TargetFinder.h */,
+				EDC896A11F3B045300A1CF5B /* TargetSearchResult.h */,
+				EDC896A21F3B045300A1CF5B /* TextTracker.h */,
+				EDC896A31F3B045300A1CF5B /* Tool.h */,
+				EDC896A41F3B045300A1CF5B /* Trackable.h */,
+				EDC896A51F3B045300A1CF5B /* TrackableResult.h */,
+				EDC896A61F3B045300A1CF5B /* TrackableSource.h */,
+				EDC896A71F3B045300A1CF5B /* Tracker.h */,
+				EDC896A81F3B045300A1CF5B /* TrackerManager.h */,
+				EDC896A91F3B045300A1CF5B /* TransformModel.h */,
+				EDC896AA1F3B045300A1CF5B /* Type.h */,
+				EDC896AB1F3B045300A1CF5B /* UIGLViewProtocol.h */,
+				EDC896AC1F3B045300A1CF5B /* UpdateCallback.h */,
+				EDC896AD1F3B045300A1CF5B /* Vectors.h */,
+				EDC896AE1F3B045300A1CF5B /* VideoBackgroundConfig.h */,
+				EDC896AF1F3B045300A1CF5B /* VideoBackgroundTextureInfo.h */,
+				EDC896B01F3B045300A1CF5B /* VideoMode.h */,
+				EDC896B11F3B045300A1CF5B /* View.h */,
+				EDC896B21F3B045300A1CF5B /* ViewerParameters.h */,
+				EDC896B31F3B045300A1CF5B /* ViewerParametersList.h */,
+				EDC896B41F3B045300A1CF5B /* ViewList.h */,
+				EDC896B51F3B045300A1CF5B /* VirtualButton.h */,
+				EDC896B61F3B045300A1CF5B /* VirtualButtonResult.h */,
+				EDC896B71F3B045300A1CF5B /* Vuforia.h */,
+				EDC896B81F3B045300A1CF5B /* Vuforia_iOS.h */,
+				EDC896B91F3B045300A1CF5B /* VuMarkTarget.h */,
+				EDC896BA1F3B045300A1CF5B /* VuMarkTargetResult.h */,
+				EDC896BB1F3B045300A1CF5B /* VuMarkTemplate.h */,
+				EDC896BC1F3B045300A1CF5B /* Word.h */,
+				EDC896BD1F3B045300A1CF5B /* WordList.h */,
+				EDC896BE1F3B045300A1CF5B /* WordResult.h */,
+			);
+			path = Vuforia;
+			sourceTree = "<group>";
+		};
+		EDC896BF1F3B045300A1CF5B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896C01F3B045300A1CF5B /* arm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EDC896C01F3B045300A1CF5B /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896C11F3B045300A1CF5B /* libVuforia.a */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		EDC896C21F3B045300A1CF5B /* licenses */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896C31F3B045300A1CF5B /* license_3rdpartynotice.txt */,
+			);
+			path = licenses;
+			sourceTree = "<group>";
+		};
+		EDC896C51F3B045300A1CF5B /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896C61F3B045300A1CF5B /* readme.txt */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		EDC896C71F3B045300A1CF5B /* VuforiaManager */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896C81F3B045300A1CF5B /* VuforiaEAGLView.h */,
+				EDC896C91F3B045300A1CF5B /* VuforiaEAGLView.mm */,
+				EDC896CA1F3B045300A1CF5B /* VuforiaManager.h */,
+				EDC896CB1F3B045300A1CF5B /* VuforiaManager.mm */,
+				EDC896CC1F3B045300A1CF5B /* VuforiaObjects.h */,
+				EDC896CD1F3B045300A1CF5B /* VuforiaObjects.mm */,
+				EDC896CE1F3B045300A1CF5B /* VuforiaShaderUtils.h */,
+				EDC896CF1F3B045300A1CF5B /* VuforiaShaderUtils.m */,
+			);
+			path = VuforiaManager;
+			sourceTree = "<group>";
+		};
+		EDC896DA1F3B062200A1CF5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC896EB1F3B067B00A1CF5B /* CoreMotion.framework */,
+				EDC896E91F3B067600A1CF5B /* AVFoundation.framework */,
+				EDC896E71F3B066E00A1CF5B /* SystemConfiguration.framework */,
+				EDC896E51F3B066300A1CF5B /* CoreMedia.framework */,
+				EDC896E31F3B065A00A1CF5B /* OpenGLES.framework */,
+				EDC896E11F3B064500A1CF5B /* AudioToolbox.framework */,
+				EDC896DF1F3B063E00A1CF5B /* MediaPlayer.framework */,
+				EDC896DD1F3B062800A1CF5B /* SpriteKit.framework */,
+				EDC896DB1F3B062200A1CF5B /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC8970E1F3BFA0400A1CF5B /* ImageTargets */ = {
+			isa = PBXGroup;
+			children = (
+				EDC897111F3BFA1700A1CF5B /* StonesAndChips.dat */,
+				EDC897121F3BFA1700A1CF5B /* StonesAndChips.xml */,
+			);
+			name = ImageTargets;
+			sourceTree = "<group>";
+		};
+		EDC897171F3BFEE800A1CF5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDC897831F3C3A5900A1CF5B /* Lowpoly_tree_sample.scn */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EDC897181F3BFEF500A1CF5B /* VuforiaAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8978D1F3C54A200A1CF5B /* Models */,
+				EDC8970E1F3BFA0400A1CF5B /* ImageTargets */,
+			);
+			name = VuforiaAssets;
+			sourceTree = "<group>";
+		};
+		EDC897191F3BFF1100A1CF5B /* SceneKitAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EDC897171F3BFEE800A1CF5B /* Models */,
+			);
+			name = SceneKitAssets;
+			sourceTree = "<group>";
+		};
+		EDC8978D1F3C54A200A1CF5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8978E1F3C54AE00A1CF5B /* Lowpoly_tree_sample.scn */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC895561F3AF89300A1CF5B /* VuforiaScenekitOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC8956E1F3AF89400A1CF5B /* Build configuration list for PBXNativeTarget "VuforiaScenekitOC" */;
+			buildPhases = (
+				EDC895531F3AF89300A1CF5B /* Sources */,
+				EDC895541F3AF89300A1CF5B /* Frameworks */,
+				EDC895551F3AF89300A1CF5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VuforiaScenekitOC;
+			productName = VuforiaScenekitOC;
+			productReference = EDC895571F3AF89300A1CF5B /* VuforiaScenekitOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC8954F1F3AF89300A1CF5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nbcb;
+				TargetAttributes = {
+					EDC895561F3AF89300A1CF5B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PU39U8DFF5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EDC895521F3AF89300A1CF5B /* Build configuration list for PBXProject "VuforiaScenekitOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC8954E1F3AF89300A1CF5B;
+			productRefGroup = EDC895581F3AF89300A1CF5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC895561F3AF89300A1CF5B /* VuforiaScenekitOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC895551F3AF89300A1CF5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC897841F3C3EDD00A1CF5B /* Lowpoly_tree_sample.scn in Resources */,
+				EDC8956A1F3AF89400A1CF5B /* LaunchScreen.storyboard in Resources */,
+				EDC895671F3AF89400A1CF5B /* Assets.xcassets in Resources */,
+				EDC896D21F3B045300A1CF5B /* readme.txt in Resources */,
+				EDC896D31F3B045300A1CF5B /* readme.txt in Resources */,
+				EDC895651F3AF89300A1CF5B /* Main.storyboard in Resources */,
+				EDC897161F3BFA1700A1CF5B /* StonesAndChips.xml in Resources */,
+				EDC8978F1F3C54AE00A1CF5B /* Lowpoly_tree_sample.scn in Resources */,
+				EDC896D11F3B045300A1CF5B /* license_3rdpartynotice.txt in Resources */,
+				EDC897151F3BFA1700A1CF5B /* StonesAndChips.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC895531F3AF89300A1CF5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC895621F3AF89300A1CF5B /* ViewController.m in Sources */,
+				EDC896D61F3B045300A1CF5B /* VuforiaObjects.mm in Sources */,
+				EDC8955F1F3AF89300A1CF5B /* AppDelegate.m in Sources */,
+				EDC896D71F3B045300A1CF5B /* VuforiaShaderUtils.m in Sources */,
+				EDC896D41F3B045300A1CF5B /* VuforiaEAGLView.mm in Sources */,
+				EDC8955C1F3AF89300A1CF5B /* main.m in Sources */,
+				EDC896D51F3B045300A1CF5B /* VuforiaManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDC895631F3AF89300A1CF5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC895641F3AF89300A1CF5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC895681F3AF89400A1CF5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC895691F3AF89400A1CF5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC8956C1F3AF89400A1CF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC8956D1F3AF89400A1CF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC8956F1F3AF89400A1CF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PU39U8DFF5;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vuforia",
+					"$(PROJECT_DIR)/Vuforia/vuforia-sdk-ios-6-2-9/build/include",
+					"$(PROJECT_DIR)/Vuforia/VuforiaManager",
+				);
+				INFOPLIST_FILE = VuforiaScenekitOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vuforia/vuforia-sdk-ios-6-2-9/build/lib/arm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nbcb.VuforiaScenekitOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDC895701F3AF89400A1CF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PU39U8DFF5;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vuforia",
+					"$(PROJECT_DIR)/Vuforia/vuforia-sdk-ios-6-2-9/build/include",
+					"$(PROJECT_DIR)/Vuforia/VuforiaManager",
+				);
+				INFOPLIST_FILE = VuforiaScenekitOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vuforia/vuforia-sdk-ios-6-2-9/build/lib/arm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nbcb.VuforiaScenekitOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC895521F3AF89300A1CF5B /* Build configuration list for PBXProject "VuforiaScenekitOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC8956C1F3AF89400A1CF5B /* Debug */,
+				EDC8956D1F3AF89400A1CF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC8956E1F3AF89400A1CF5B /* Build configuration list for PBXNativeTarget "VuforiaScenekitOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC8956F1F3AF89400A1CF5B /* Debug */,
+				EDC895701F3AF89400A1CF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC8954F1F3AF89300A1CF5B /* Project object */;
+}
